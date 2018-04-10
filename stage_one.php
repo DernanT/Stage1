@@ -133,11 +133,11 @@
         <div class="bg_img" style="background-image: url(img/bg.jpg);"></div>
         <div class="landing_content_area">
             <h1>DOVE WORKS</h1>
-            <h3><span id="clock"></span></h3>
             <?php
             $datetime = new DateTime;
             $datetime->setTimezone(new DateTimeZone('Africa/Lagos'));
-            echo "The time is " . $datetime->format('H:i:s');
+            echo " <span id='clock'>" . $datetime->format('H:i:s');
+            echo "</span>";
             ?>
 
         </div>
